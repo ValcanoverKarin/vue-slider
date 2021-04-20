@@ -4,3 +4,49 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 70%;
+    margin: auto;
+    position: relative;
+
+    /*background-color: aqua;*/
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+}
+
+.chevron {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.images {
+    padding: 5%;
+}
+
+.circles {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 15px;
+    border-radius: 100px;
+}
+
+.circle {
+    font-size: 13px;
+    color: white;
+    padding: 5px;
+}
+
+.circle.active {
+    color: blue;
+}
