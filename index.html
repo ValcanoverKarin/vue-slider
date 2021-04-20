@@ -40,16 +40,9 @@
 
             <!--circles-->
             <div class="circles">
-                <span class="circle active">
-                    <i class="fas fa-circle"></i>
-                </span>
-                <span class="circle">
-                    <i class="fas fa-circle"></i>
-                </span>
-                <span class="circle">
-                    <i class="fas fa-circle"></i>
-                </span>
-                <span class="circle">
+                <!-------1d. per ogni immagine in sliderImages stampo un pallino ------->
+                <!-------1e. se l'indice è uguale all' elemento corrente è anche active ------->
+                <span v-for="(image, index) in sliderImages" class="circle" :class="{ 'active': index == currentActiveImage}">
                     <i class="fas fa-circle"></i>
                 </span>
             </div>
