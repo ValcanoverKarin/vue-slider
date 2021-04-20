@@ -33,7 +33,14 @@ var app = new Vue (
                     this.currentActiveImage = this.currentActiveImage - 1;
                 }
             }
-            
-        }
+        },
+
+        //1l. creo un setInterval per far scorrere da sole le immagini ogni 3 secondi
+        created() {
+            setInterval( () => {
+                this.nextPhoto();
+            }  
+            ,3000); 
+         }
     }
 );
